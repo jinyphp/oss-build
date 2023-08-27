@@ -80,3 +80,26 @@ php artisan serve
 
 ### 접속하기
 `localhost:8000`으로 접속합니다.
+
+## 모듈 설치
+라라벨 프로젝트를 jiny build 프로젝트로 개량합니다.
+
+모듈 설치하기
+```
+composer require jiny/modules
+php artisan vendor:publish --provider="Jiny\Modules\JinyModulesServiceProvider"
+php artisan module:init
+```
+
+변경된 composer.json 의 주요 내용은 다음과 같습니다.
+```
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Modules\\": "modules/"
+    }
+  }
+}
+```
+
