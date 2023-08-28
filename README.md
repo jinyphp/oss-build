@@ -103,3 +103,9 @@ php artisan module:init
 }
 ```
 
+컴포저 갱신
+```
+composer dump-autoload
+```
+
+
