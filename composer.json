@@ -1,5 +1,5 @@
 {
-    "name": "jiny/oss-build",
+    "name": "jiny/builder",
     "type": "project",
     "description": "The skeleton application for the jiny builder.",
     "keywords": ["jiny", "laravel", "framework"],
